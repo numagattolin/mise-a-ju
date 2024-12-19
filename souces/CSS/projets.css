@@ -154,10 +154,44 @@ body {
 h2 {
     color: white;
     width: 100px;
+    margin-left: -15px;
     
 }
   
 .image1 {
+    color: white;
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    margin-left: -80px;
+}
+
+/*bloc 2*/
+
+.wrapper2 {
+  background-color: #000000;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: 567px;
+  width: 350px;
+  box-shadow: 0px 4px 30px rgb(255, 255, 255);
+  height: 350px;
+  margin-top: -432px;
+}
+    
+.titre2{
+    margin: 25px;
+    padding-left:190px; 
+}
+  
+h2 {
+    color: white;
+    width: 100px;
+    margin-left: -15px;
+    
+}
+  
+.image2 {
     color: white;
     width: 500px;
     height: 300px;
