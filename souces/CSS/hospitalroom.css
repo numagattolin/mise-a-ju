@@ -1,0 +1,171 @@
+*{
+    background-color: black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*menu*/
+
+.menu {
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 30px rgb(255, 255, 255);
+}
+
+.menu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+
+}
+
+.menu a.active {
+    background-color: #04AA6D;
+}
+
+.menu-container {
+    max-width: 1781px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+/*menu*/
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.menu {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.menu a {
+    padding: 10px;
+    text-align: left;
+}
+
+.menu-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.logo {
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+}
+
+/* Responsive Design */
+/*caroussel*/
+
+.carrousel {
+    position: relative;
+    width: 1909px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 4px;
+    margin-top: 1033px;
+    height: 1375px;
+}
+
+.carrousel-wrapper {
+    display: flex;
+    position: relative;
+    animation: moveCarousel 0.1.15s linear infinite; /* Animation du défilement automatique */
+}
+
+.carrousel-item {
+    min-width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 20s forwards;
+}
+
+.carrousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Animation du fade */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animation pour faire défiler les images automatiquement */
+@keyframes moveCarousel {
+    0% {
+        transform: translateX(0);
+    }
+    33.33% {
+        transform: translateX(-100%);
+    }
+    66.66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/*caroussel*/
+/*bloc 1*/
+
+.wrapper1 {
+    background-color: #000000;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left: 1408px;
+    width: 502px;
+    box-shadow: 0px 4px 30px rgb(255, 255, 255);
+    height: 554px;
+    margin-top: -2008px;
+    }
+    
+    .titre1{
+    margin: 25px;
+    padding-left:190px; 
+    }
+  
+    h2 {
+    color: white;
+    width: 100px;
+    
+    }
+  
+    .image1 {
+    color: white;
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    margin-left: -80px;
+    }
